@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required Meta Tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Title and Meta Description -->
+    <title>Hassan Talha | Software Developer & Web Portfolio</title>
+    <meta name="description" content="Hassan Talha's portfolio showcasing modern web design, software development, and computer science projects using technologies like JavaScript, Python, and Java.">
+    
+    <!-- Meta Keywords (Optional but useful for some search engines) -->
+    <meta name="keywords" content="Hassan Talha, Software Developer, Web Developer, JavaScript, Python, React, Machine Learning, TensorFlow">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    
+    <!-- Open Graph Meta Tags for Social Sharing -->
+    <meta property="og:title" content="Hassan Talha | Portfolio">
+    <meta property="og:description" content="Showcasing modern web design and development projects.">
+    <meta property="og:image" content="https://chronogrp.com/url/og-image.jpg">
+    <meta property="og:url" content="https://chronogrp.com/">
+    <meta property="og:type" content="website">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Hassan Talha | Software Developer & Web Portfolio">
+    <meta name="twitter:description" content="Showcasing modern web design and development projects using technologies like JavaScript, Python, and React.">
+    <meta name="twitter:image" content="https://chronogrp.com/url/og-image.jpg">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- JavaScript -->
+    <script src="scripts.js" defer></script>
+    
+    <!-- Structured Data for SEO -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Hassan Talha",
+      "url": "https://chronogrp.com/",
+      "sameAs": [
+        "https://www.linkedin.com/in/hassan-talha/",
+        "https://github.com/HassanT701"
+      ],
+      "jobTitle": "Software Developer",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Hassan Talha Portfolio"
+      },
+      "knowsAbout": [
+        "TensorFlow", "JavaScript", "Node.JS", "React.JS",
+        "Data Structures", "Machine Learning", "Python", "Java", "HTML", "CSS"
+      ]
+    }
+    </script>
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="menu-icon" onclick="toggleMenu(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#project">Current Project</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Home Section-->
+    <section id="home">
+        <div class="svg-container">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400">
+                <text x="400" y="150" class="title">Hassan Talha</text>
+                <text x="400" y="250" class="subtitle">Student & Passionate Learner of Computer Science</text>
+            </svg>
+        </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about">
+        <div class="container">
+            <div class="about-content">
+                <img src="images/pfp.jpg" alt="Hassan Talha pfp" loading="lazy">
+                <div class="about-text">
+                    <h2>About Me</h2>
+                    <p>My name is Hassan Talha, a passionate software developer with experience across various technologies. I am committed to solving complex problems and creating effective solutions that enhance productivity and user experiences.</p>
+                
+                    <div class="skills-container">
+                        <div class="skills-column">
+                            <h3>Programming Languages</h3>
+                            <ul>
+                                <li><i class="fas fa-code"></i> Python</li>
+                                <li><i class="fas fa-code"></i> Java</li>
+                                <li><i class="fas fa-code"></i> JavaScript</li>
+                                <li><i class="fas fa-code"></i> HTML & CSS</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="skills-column">
+                            <h3>Skills</h3>
+                            <ul>
+                                <li><i class="fas fa-cogs"></i> Machine Learning (TensorFlow)</li>
+                                <li><i class="fas fa-cogs"></i> Data Structures & Algorithms</li>
+                                <li><i class="fas fa-cogs"></i> Java GUIs</li>
+                                <li><i class="fas fa-cogs"></i> API Development</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="skills-column">
+                            <h3>Tools</h3>
+                            <ul>
+                                <li><i class="fas fa-tools"></i> Node.js</li>
+                                <li><i class="fas fa-tools"></i> React.js</li>
+                                <li><i class="fas fa-tools"></i> Git & GitHub</li>
+                                <li><i class="fas fa-tools"></i> VS Code</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio">
+        <div class="container">
+            <h2>Portfolio</h2>
+            <div class="projects-grid">
+                <div class="project">
+                    <img src="images/ML-project-ss.png" alt="Screenshot of Project One" loading="lazy">
+                    <div class="project-info">
+                        <h3>Project One</h3>
+                        <p>Constructed my first Machine Learning model in July of 2024, designed to detect Heart Disease based on 14 different factors using TensorFlow, Streamlit, and a dataset from Kaggle</p>
+                        <a href="https://heart-disease-ml-model.streamlit.app/" target="_blank" rel="noopener noreferrer">View Project</a>
+                    </div>
+                </div>
+                <!-- Add more projects (101-108) -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Current Projects Section -->
+    <section id="project">
+        <div class="container">
+            <h2>Current Project</h2>
+            <div class="current">
+                <article class="post">
+                    <h3>Inventory Management App</a></h3>
+                    <p>Learning how to use Next.js, Firebase, and React to make an inventory management app with the goal of providing users ease-of-use, relevant features, and unlimited customization which will be deployed using Vercel once done.</p>
+                    
+                    <h4 style="text-align: center;">Development Progress</h4>
+                    
+                    <div class="progress-container">
+                        <div class="progress-bar">
+                            <div class="progress" id="progress"></div>
+                        </div>
+                        <span id="progress-percentage">0%</span>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <form form id="contact-form" onsubmit="sendMail(event)">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+                
+                <button type="submit">Send Message</button>
+            </form>
+            <p class="social-text"></p>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/hassan-talha/" target="_blank" rel="noopener noreferrer">
+                    <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn">
+                </a>
+                <a href="https://github.com/HassanT701" target="_blank" rel="noopener noreferrer">
+                    <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub">
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Hassan Talha. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
