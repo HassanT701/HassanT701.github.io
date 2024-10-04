@@ -150,8 +150,8 @@ svg {
     height: 250vh;
     position: fixed;
     transform-origin: center;
-    will-change: transform;
-    transition: transform 0.5s ease, opacity 0.5s ease;
+    will-change: transform, opacity;
+    transition: transform 0.8s ease-out, opacity 0.5s ease-in;
 }
 
 /* Styling for the text inside the SVG */
