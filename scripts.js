@@ -65,14 +65,14 @@ function sendMail(event) {
     window.location.href = mailtoLink;
 }
 
-
+// nav bar
 function toggleMenu(x) {
     x.classList.toggle("change");
     const navLinks = document.querySelector('nav ul');
     navLinks.classList.toggle('show');
 }
 
-
+//svg
 const home = document.getElementById('home');
 const svg = document.querySelector('svg');
     const body = document.body;
@@ -82,15 +82,19 @@ const svg = document.querySelector('svg');
         const maxScroll = home.scrollHeight - window.innerHeight;
     
         // Zoom in the SVG based on scroll position (up to 20x zoom)
-        const zoomScale = 1 + (scrollTop / maxScroll) * 15;
+        const zoomScale = Math.min(1 + (scrollTop / maxScroll) * 10, 15);
         svg.style.transform = `scale(${zoomScale})`;
 
         // Change background color to black when 90% scrolled
         if (scrollTop / maxScroll > 0.9) {
-            body.classList.add('black-theme');  // Add black-theme class
-            svg.style.opacity = '0';  // Fade out the SVG
+            body.classList.add('black-theme');  
+            svg.style.opacity = '0';  
         } else {
-            body.classList.remove('black-theme');  // Remove black-theme class
-            svg.style.opacity = '1';  // Reset SVG visibility
+            body.classList.remove('black-theme');  
+            svg.style.opacity = '1';  
+        }
+
+        if (scrollTop < 100) {
+            svg.style.transform = `scale(1)`;  // Reset zoom to 1 when near the top
         }
     });  
