@@ -38,6 +38,12 @@
     <meta name="twitter:description" content="Showcasing modern web design and development projects using technologies like JavaScript, Python, and React.">
     <meta name="twitter:image" content="https://chronogrp.com/url/og-image.jpg">
 
+    <!--particles.js-->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
+    <!--fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+
     <!-- CSS -->
     <link rel="stylesheet" href="styles.css">
 
@@ -86,14 +92,15 @@
     </nav>
 
     <!-- Home Section-->
-    <section id="home">
+    <section id="home"> 
+        <div id="particles-js"></div>  
         <div class="svg-container">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400">
                 <text x="400" y="150" class="title">Hassan Talha</text>
                 <text x="400" y="250" class="subtitle">Student & Passionate Learner of Computer Science</text>
             </svg>
         </div>
-    </section>
+    </section>   
 
     <!-- About Me Section -->
     <section id="about">
@@ -109,30 +116,49 @@
                         <div class="skills-column">
                             <h3>Programming Languages</h3>
                             <ul>
+                                <li><i class="fas fa-cogs"></i> </li>
+                                <li><i class="fas fa-cogs"></i> </li>
                                 <li><i class="fas fa-code"></i> Python</li>
                                 <li><i class="fas fa-code"></i> Java</li>
                                 <li><i class="fas fa-code"></i> JavaScript</li>
-                                <li><i class="fas fa-code"></i> HTML & CSS</li>
+                                <li><i class="fas fa-code"></i> HTML5 & CSS3</li>
+                                <li><i class="fas fa-code"></i> Swift</li>
                             </ul>
                         </div>
                         
                         <div class="skills-column">
-                            <h3>Skills</h3>
+                            <h3>Frameworks, Platforms, Libraries & Databases</h3>
                             <ul>
-                                <li><i class="fas fa-cogs"></i> Machine Learning (TensorFlow)</li>
-                                <li><i class="fas fa-cogs"></i> Data Structures & Algorithms</li>
-                                <li><i class="fas fa-cogs"></i> Java GUIs</li>
-                                <li><i class="fas fa-cogs"></i> API Development</li>
+                                <li><i class="fas fa-cogs"></i> Firebase</li>
+                                <li><i class="fas fa-cogs"></i> Vercel</li>
+                                <li><i class="fas fa-cogs"></i> Google Cloud</li>
+                                <li><i class="fas fa-cogs"></i> Bootsrap</li>
+                                <li><i class="fas fa-cogs"></i> FastAPI</li>
+                                <li><i class="fas fa-cogs"></i> NPM</li>
+                                <li><i class="fas fa-cogs"></i> Next JS</li>
+                                <li><i class="fas fa-cogs"></i> Node.JS</li>
+                                <li><i class="fas fa-cogs"></i> OPENCV</li>
+                                <li><i class="fas fa-cogs"></i> React/React Native</li>
+                                <li><i class="fas fa-cogs"></i> Firebase</li>
+                                <li><i class="fas fa-cogs"></i> MongoDB</li>
+                                <li><i class="fas fa-cogs"></i> MySQL</li>
                             </ul>
                         </div>
                         
                         <div class="skills-column">
-                            <h3>Tools</h3>
+                            <h3>Machine Learning</h3>
                             <ul>
-                                <li><i class="fas fa-tools"></i> Node.js</li>
-                                <li><i class="fas fa-tools"></i> React.js</li>
-                                <li><i class="fas fa-tools"></i> Git & GitHub</li>
-                                <li><i class="fas fa-tools"></i> VS Code</li>
+                                <li><i class="fas fa-cogs"></i> </li>
+                                <li><i class="fas fa-cogs"></i> </li>
+                                <li><i class="fas fa-cogs"></i> Keras</li>
+                                <li><i class="fas fa-cogs"></i> Matplotlib</li>
+                                <li><i class="fas fa-cogs"></i> Numpy</li>
+                                <li><i class="fas fa-cogs"></i> Pandas</li>
+                                <li><i class="fas fa-cogs"></i> Plotly</li>
+                                <li><i class="fas fa-cogs"></i> PyTorch</li>
+                                <li><i class="fas fa-cogs"></i> Scikit-Learn</li>
+                                <li><i class="fas fa-cogs"></i> TensorFlow</li>
+                                <li><i class="fas fa-cogs"></i> SMOTE</li>
                             </ul>
                         </div>
                     </div>
@@ -154,13 +180,20 @@
                         <a href="https://heart-disease-ml-model.streamlit.app/" target="_blank" rel="noopener noreferrer">View Project</a>
                     </div>
                 </div>
-                <!-- Add more projects (101-108) -->
                 <div class="project">
                     <img src="images/inventory2-ss.png" alt="Screenshot of Project Two" loading="lazy">
                     <div class="project-info">
                         <h3>Project Two</h3>
                         <p>Learned and used node.js & Firebase in order to build an Inventory Management App with features to add, edit, remove items; along with the ability to sign in, save, and download an inventory as a CSV file.</p>
                         <a href="https://inventory-management-app-phi-pied.vercel.app/" target="_blank" rel="noopener noreferrer">View Project</a>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="images/cc-ss.png" alt="Screenshot of Project Two" loading="lazy">
+                    <div class="project-info">
+                        <h3>Project Three</h3>
+                        <p>Developed a customer churn prediction system using feature engineering and SMOTE to balance the dataset. Trained and optimized three models — XGBoost, Random Forest, and Support Vector Machine — and integrated them using a Voting Classifier to maximize recall and overall accuracy. </p>
+                        <a href="https://customer-retention.streamlit.app/" target="_blank" rel="noopener noreferrer">View Project</a>
                     </div>
                 </div>
             </div>
@@ -173,8 +206,8 @@
             <h2>Current Project</h2>
             <div class="current">
                 <article class="post">
-                    <h3>Customer Churn Prediction</a></h3>
-                    <p>Constructing a Machine Learning model that uses previous credit card consumers data in order to predict if a potential customer will leave a bank or not</p>
+                    <h3>Nvidia Sentiment Analysis</a></h3>
+                    <p>Analyzing stock market data, along with real time relevant news in order to find a possible correlation between news cycles and the price of Nvidia stock</p>
                     
                     <h4 style="text-align: center;">Development Progress</h4>
                     
@@ -182,7 +215,7 @@
                         <div class="progress-bar">
                             <div class="progress" id="progress"></div>
                         </div>
-                        <span id="progress-percentage">99%</span>
+                        <span id="progress-percentage">5%</span>
                     </div>
                 </article>
             </div>
