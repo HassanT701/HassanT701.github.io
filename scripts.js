@@ -37,34 +37,6 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 
-//Contact form 
-function sendMail(event) {
-    event.preventDefault(); // Prevent the form from submitting the default way
-
-    const name = document.getElementById('name').value.trim();
-    const email = document.getElementById('email').value.trim();
-    const message = document.getElementById('message').value.trim();
-
-    // Basic validation
-    if (!name || !email || !message) {
-        alert('Please fill in all fields.');
-        return;
-    }
-
-    // Email format validation using regex
-    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    if (!emailPattern.test(email)) {
-        alert('Please enter a valid email address.');
-        return;
-    }
-
-    // Create the mailto link with the form data
-    const mailtoLink = `mailto:talhahassan701@gmail.com?subject=Message from ${name}&body=Name: ${name}%0AEmail for reference: ${email}%0AMessage: ${message}`;
-
-    // Open the mailto link in the user's email client
-    window.location.href = mailtoLink;
-}
-
 //nav bar
 function toggleMenu(x) {
     x.classList.toggle("change");
